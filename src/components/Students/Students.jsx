@@ -3,9 +3,13 @@ import Scores from '../Scores/Scores'
 
 const Students = (props) => {
     return (
-        <div>
+        <div className="App">
             {props.students.map((student, idx) => 
-            <p key={idx}>{student.name}{student.bio}< Scores scores={student.scores} /></p>
+            <p key={idx}>
+                {student.name}
+                <br/>
+                {student.bio}
+                < Scores scores={student.scores} /></p>
             )}
         </div>
     )
